@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002669881F41E1E6000E9D04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 002669871F41E1E6000E9D04 /* main.m */; };
+		0026698B1F41E1E6000E9D04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0026698A1F41E1E6000E9D04 /* AppDelegate.m */; };
+		002669911F41E1E6000E9D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0026698F1F41E1E6000E9D04 /* Main.storyboard */; };
+		002669931F41E1E6000E9D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002669921F41E1E6000E9D04 /* Assets.xcassets */; };
+		002669961F41E1E6000E9D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002669941F41E1E6000E9D04 /* LaunchScreen.storyboard */; };
+		002669FA1F41F43C000E9D04 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 002669F21F41F43C000E9D04 /* HttpTool.m */; };
+		002669FB1F41F43C000E9D04 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002669F71F41F43C000E9D04 /* AppViewController.m */; };
+		002669FC1F41F43C000E9D04 /* SignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002669F91F41F43C000E9D04 /* SignViewController.m */; };
+		002669FF1F41F47A000E9D04 /* SignData.m in Sources */ = {isa = PBXBuildFile; fileRef = 002669FE1F41F47A000E9D04 /* SignData.m */; };
+		00266A021F41F50A000E9D04 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 00266A011F41F50A000E9D04 /* DataBase.m */; };
+		00266A051F41F5FF000E9D04 /* OfflineSignController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00266A041F41F5FF000E9D04 /* OfflineSignController.m */; };
+		00266A081F41F87C000E9D04 /* SignCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00266A071F41F87C000E9D04 /* SignCell.m */; };
+		00266A0B1F41FA4D000E9D04 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 00266A0A1F41FA4D000E9D04 /* User.m */; };
+		00266A0E1F428330000E9D04 /* OfflineMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00266A0D1F428330000E9D04 /* OfflineMapController.m */; };
+		00266A111F428383000E9D04 /* MAHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00266A101F428383000E9D04 /* MAHeaderView.m */; };
+		008023461F4298E600F0ECB9 /* SignInquireController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008023451F4298E600F0ECB9 /* SignInquireController.m */; };
+		4692FE2E75270331F478BCE9 /* Pods_SignDemo_XQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39E0D53BE95FC9EC2BF69A9 /* Pods_SignDemo_XQ.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		002669831F41E1E6000E9D04 /* SignDemo-XQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SignDemo-XQ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		002669871F41E1E6000E9D04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		002669891F41E1E6000E9D04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0026698A1F41E1E6000E9D04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		002669901F41E1E6000E9D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		002669921F41E1E6000E9D04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		002669951F41E1E6000E9D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		002669971F41E1E6000E9D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002669E41F41ED0B000E9D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/Macros.h; sourceTree = "<group>"; };
+		002669E81F41ED9E000E9D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/PrefixHeader.pch; sourceTree = "<group>"; };
+		002669F11F41F43C000E9D04 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		002669F21F41F43C000E9D04 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		002669F61F41F43C000E9D04 /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
+		002669F71F41F43C000E9D04 /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
+		002669F81F41F43C000E9D04 /* SignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignViewController.h; sourceTree = "<group>"; };
+		002669F91F41F43C000E9D04 /* SignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignViewController.m; sourceTree = "<group>"; };
+		002669FD1F41F47A000E9D04 /* SignData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignData.h; sourceTree = "<group>"; };
+		002669FE1F41F47A000E9D04 /* SignData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignData.m; sourceTree = "<group>"; };
+		00266A001F41F50A000E9D04 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		00266A011F41F50A000E9D04 /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
+		00266A031F41F5FF000E9D04 /* OfflineSignController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineSignController.h; sourceTree = "<group>"; };
+		00266A041F41F5FF000E9D04 /* OfflineSignController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineSignController.m; sourceTree = "<group>"; };
+		00266A061F41F87C000E9D04 /* SignCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignCell.h; sourceTree = "<group>"; };
+		00266A071F41F87C000E9D04 /* SignCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignCell.m; sourceTree = "<group>"; };
+		00266A091F41FA4D000E9D04 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		00266A0A1F41FA4D000E9D04 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		00266A0C1F428330000E9D04 /* OfflineMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfflineMapController.h; path = ../../OfflineMapController.h; sourceTree = "<group>"; };
+		00266A0D1F428330000E9D04 /* OfflineMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfflineMapController.m; path = ../../OfflineMapController.m; sourceTree = "<group>"; };
+		00266A0F1F428383000E9D04 /* MAHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAHeaderView.h; sourceTree = "<group>"; };
+		00266A101F428383000E9D04 /* MAHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAHeaderView.m; sourceTree = "<group>"; };
+		008023441F4298E600F0ECB9 /* SignInquireController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInquireController.h; sourceTree = "<group>"; };
+		008023451F4298E600F0ECB9 /* SignInquireController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInquireController.m; sourceTree = "<group>"; };
+		0D092FB00E75B485DFB889EA /* Pods-SignDemo-XQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignDemo-XQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignDemo-XQ/Pods-SignDemo-XQ.release.xcconfig"; sourceTree = "<group>"; };
+		5171DE58C8F6C6210213AD8F /* Pods-SignDemo-XQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignDemo-XQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignDemo-XQ/Pods-SignDemo-XQ.debug.xcconfig"; sourceTree = "<group>"; };
+		E39E0D53BE95FC9EC2BF69A9 /* Pods_SignDemo_XQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignDemo_XQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		002669801F41E1E6000E9D04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4692FE2E75270331F478BCE9 /* Pods_SignDemo_XQ.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0026697A1F41E1E6000E9D04 = {
+			isa = PBXGroup;
+			children = (
+				002669851F41E1E6000E9D04 /* SignDemo-XQ */,
+				002669841F41E1E6000E9D04 /* Products */,
+				7A86D5BA0EBADEEC6440FB55 /* Pods */,
+				18C7CBFE11CAA79E3E187458 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		002669841F41E1E6000E9D04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				002669831F41E1E6000E9D04 /* SignDemo-XQ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		002669851F41E1E6000E9D04 /* SignDemo-XQ */ = {
+			isa = PBXGroup;
+			children = (
+				002669891F41E1E6000E9D04 /* AppDelegate.h */,
+				0026698A1F41E1E6000E9D04 /* AppDelegate.m */,
+				002669EF1F41F43C000E9D04 /* Application */,
+				002669861F41E1E6000E9D04 /* Supporting Files */,
+			);
+			path = "SignDemo-XQ";
+			sourceTree = "<group>";
+		};
+		002669861F41E1E6000E9D04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				002669E31F41ED0B000E9D04 /* Macros.h */,
+				002669E71F41ED9E000E9D04 /* PrefixHeader.pch */,
+				0026698F1F41E1E6000E9D04 /* Main.storyboard */,
+				002669921F41E1E6000E9D04 /* Assets.xcassets */,
+				002669941F41E1E6000E9D04 /* LaunchScreen.storyboard */,
+				002669971F41E1E6000E9D04 /* Info.plist */,
+				002669871F41E1E6000E9D04 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		002669EF1F41F43C000E9D04 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				002669F01F41F43C000E9D04 /* Handle */,
+				002669F31F41F43C000E9D04 /* Model */,
+				002669F41F41F43C000E9D04 /* View */,
+				002669F51F41F43C000E9D04 /* ViewController */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		002669F01F41F43C000E9D04 /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+				002669F11F41F43C000E9D04 /* HttpTool.h */,
+				002669F21F41F43C000E9D04 /* HttpTool.m */,
+				00266A001F41F50A000E9D04 /* DataBase.h */,
+				00266A011F41F50A000E9D04 /* DataBase.m */,
+				00266A091F41FA4D000E9D04 /* User.h */,
+				00266A0A1F41FA4D000E9D04 /* User.m */,
+			);
+			path = Handle;
+			sourceTree = "<group>";
+		};
+		002669F31F41F43C000E9D04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				002669FD1F41F47A000E9D04 /* SignData.h */,
+				002669FE1F41F47A000E9D04 /* SignData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		002669F41F41F43C000E9D04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00266A0F1F428383000E9D04 /* MAHeaderView.h */,
+				00266A101F428383000E9D04 /* MAHeaderView.m */,
+				00266A061F41F87C000E9D04 /* SignCell.h */,
+				00266A071F41F87C000E9D04 /* SignCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		002669F51F41F43C000E9D04 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				002669F61F41F43C000E9D04 /* AppViewController.h */,
+				002669F71F41F43C000E9D04 /* AppViewController.m */,
+				002669F81F41F43C000E9D04 /* SignViewController.h */,
+				002669F91F41F43C000E9D04 /* SignViewController.m */,
+				008023441F4298E600F0ECB9 /* SignInquireController.h */,
+				008023451F4298E600F0ECB9 /* SignInquireController.m */,
+				00266A031F41F5FF000E9D04 /* OfflineSignController.h */,
+				00266A041F41F5FF000E9D04 /* OfflineSignController.m */,
+				00266A0C1F428330000E9D04 /* OfflineMapController.h */,
+				00266A0D1F428330000E9D04 /* OfflineMapController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18C7CBFE11CAA79E3E187458 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E39E0D53BE95FC9EC2BF69A9 /* Pods_SignDemo_XQ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A86D5BA0EBADEEC6440FB55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5171DE58C8F6C6210213AD8F /* Pods-SignDemo-XQ.debug.xcconfig */,
+				0D092FB00E75B485DFB889EA /* Pods-SignDemo-XQ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		002669821F41E1E6000E9D04 /* SignDemo-XQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0026699A1F41E1E6000E9D04 /* Build configuration list for PBXNativeTarget "SignDemo-XQ" */;
+			buildPhases = (
+				2E13A1F8B24690521BFA9B7D /* [CP] Check Pods Manifest.lock */,
+				0026697F1F41E1E6000E9D04 /* Sources */,
+				002669801F41E1E6000E9D04 /* Frameworks */,
+				002669811F41E1E6000E9D04 /* Resources */,
+				ED68AB7B89F580A01392C05F /* [CP] Embed Pods Frameworks */,
+				ECE43878FD63801F1F0C1D30 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SignDemo-XQ";
+			productName = "SignDemo-XQ";
+			productReference = 002669831F41E1E6000E9D04 /* SignDemo-XQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0026697B1F41E1E6000E9D04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "萧奇";
+				TargetAttributes = {
+					002669821F41E1E6000E9D04 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 42AR2QYF8F;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0026697E1F41E1E6000E9D04 /* Build configuration list for PBXProject "SignDemo-XQ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0026697A1F41E1E6000E9D04;
+			productRefGroup = 002669841F41E1E6000E9D04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				002669821F41E1E6000E9D04 /* SignDemo-XQ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		002669811F41E1E6000E9D04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002669961F41E1E6000E9D04 /* LaunchScreen.storyboard in Resources */,
+				002669931F41E1E6000E9D04 /* Assets.xcassets in Resources */,
+				002669911F41E1E6000E9D04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E13A1F8B24690521BFA9B7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECE43878FD63801F1F0C1D30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignDemo-XQ/Pods-SignDemo-XQ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED68AB7B89F580A01392C05F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignDemo-XQ/Pods-SignDemo-XQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0026697F1F41E1E6000E9D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00266A0E1F428330000E9D04 /* OfflineMapController.m in Sources */,
+				00266A0B1F41FA4D000E9D04 /* User.m in Sources */,
+				0026698B1F41E1E6000E9D04 /* AppDelegate.m in Sources */,
+				00266A081F41F87C000E9D04 /* SignCell.m in Sources */,
+				00266A021F41F50A000E9D04 /* DataBase.m in Sources */,
+				00266A051F41F5FF000E9D04 /* OfflineSignController.m in Sources */,
+				008023461F4298E600F0ECB9 /* SignInquireController.m in Sources */,
+				002669FC1F41F43C000E9D04 /* SignViewController.m in Sources */,
+				00266A111F428383000E9D04 /* MAHeaderView.m in Sources */,
+				002669881F41E1E6000E9D04 /* main.m in Sources */,
+				002669FB1F41F43C000E9D04 /* AppViewController.m in Sources */,
+				002669FF1F41F47A000E9D04 /* SignData.m in Sources */,
+				002669FA1F41F43C000E9D04 /* HttpTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0026698F1F41E1E6000E9D04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				002669901F41E1E6000E9D04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		002669941F41E1E6000E9D04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				002669951F41E1E6000E9D04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		002669E31F41ED0B000E9D04 /* Macros.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				002669E41F41ED0B000E9D04 /* Base */,
+			);
+			name = Macros.h;
+			sourceTree = "<group>";
+		};
+		002669E71F41ED9E000E9D04 /* PrefixHeader.pch */ = {
+			isa = PBXVariantGroup;
+			children = (
+				002669E81F41ED9E000E9D04 /* Base */,
+			);
+			name = PrefixHeader.pch;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		002669981F41E1E6000E9D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoqi.SignDemo-XQ";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		002669991F41E1E6000E9D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoqi.SignDemo-XQ";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0026699B1F41E1E6000E9D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5171DE58C8F6C6210213AD8F /* Pods-SignDemo-XQ.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 42AR2QYF8F;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SignDemo-XQ/Base.lproj/PrefixHeader.pch";
+				INFOPLIST_FILE = "SignDemo-XQ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoqi.SignDemo-XQ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0026699C1F41E1E6000E9D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D092FB00E75B485DFB889EA /* Pods-SignDemo-XQ.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 42AR2QYF8F;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SignDemo-XQ/Base.lproj/PrefixHeader.pch";
+				INFOPLIST_FILE = "SignDemo-XQ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoqi.SignDemo-XQ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0026697E1F41E1E6000E9D04 /* Build configuration list for PBXProject "SignDemo-XQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002669981F41E1E6000E9D04 /* Debug */,
+				002669991F41E1E6000E9D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0026699A1F41E1E6000E9D04 /* Build configuration list for PBXNativeTarget "SignDemo-XQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0026699B1F41E1E6000E9D04 /* Debug */,
+				0026699C1F41E1E6000E9D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0026697B1F41E1E6000E9D04 /* Project object */;
+}
