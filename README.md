@@ -1,25 +1,25 @@
-#地图定位签到及离线签到功能实现
+# 地图定位签到及离线签到功能实现
 
 公司的项目要实现一个像钉钉一样签到的功能,搜索后发现很少有相关的Demo或者资料,所以在这里抽取出定位签到的功能.
-##实现步骤:
+## 实现步骤:
 1.获取高德地图Key,集成高德地图iOS定位SDK.
 
 2.签到界面的初始化以及网络监听.
 
 3.签到功能实现和FMDB储存离线签到的记录.
 
-##功能实现:
-###1.获取高德地图Key,集成高德地图iOS定位SDK.
+## 功能实现:
+### 1.获取高德地图Key,集成高德地图iOS定位SDK.
 首先集成高德地图必须要提交你的Bundle Identifier来[获取key](http://lbs.amap.com/api/ios-location-sdk/guide/create-project/get-key).
 
-####(1)高德控制台创建新应用
+#### (1)高德控制台创建新应用
 
 进入控制台，创建一个新应用。如果您之前已经创建过应用，可直接跳过这个步骤.
 ![进入控制台.png](http://upload-images.jianshu.io/upload_images/2469805-d8f6778c08ab0ddb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![创建应用.png](http://upload-images.jianshu.io/upload_images/2469805-ecffbf48bd383459.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-####(2)添加新Key
+#### (2)添加新Key
 在创建的应用上点击"添加新Key"按钮，在弹出的对话框中，依次输入应用名名称，选择绑定的服务为“iOS平台SDK”，输入安全码 Bundle ID（获取方法请参考：如何获取 Bundle Identifier），如下图所示：
 /Users/xiaoqi/Desktop/Sign/创建应用.png
 需要注意的是： 1个KEY只能用于一个应用（多渠道安装包属于多个应用），1个Key在多个应用上使用会出现服务调用失败.
@@ -28,13 +28,13 @@
 
 在阅读完高德地图API服务条款后，勾选此选项，点击“提交”，完成 Key 的申请，此时您可以在所创建的应用下面看到刚申请的 Key 了.
 
-####(3)如何获取 Bundle Identifier
+#### (3)如何获取 Bundle Identifier
 
 Xcode 切换到 General 标签，查看 Bundle Identifier，如下图所示：
 
 ![查看 Bundle Identifier.png](http://upload-images.jianshu.io/upload_images/2469805-726165f3d94d9eb0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-####(4)集成高德地图iOS定位SDK
+#### (4)集成高德地图iOS定位SDK
 
 这里可以[手动集成](http://lbs.amap.com/api/ios-location-sdk/guide/create-project/manual-configuration)或者利用[cocospod集成](http://lbs.amap.com/api/ios-location-sdk/guide/create-project/cocoapods),这里我们使用比较方便的cocospod集成.
 
@@ -46,9 +46,9 @@ pod 'AMapSearch' #地图SDK搜索功能
 ```
 然后在相应目录```pod install```即可.
 
-###2.签到界面的初始化以及网络监听.
+### 2.签到界面的初始化以及网络监听.
 
-####(1)AppDelegate中的key设置以及网络监听
+#### (1)AppDelegate中的key设置以及网络监听
 首先得导入
 
 ```#import <AMapFoundationKit/AMapFoundationKit.h>```
@@ -106,7 +106,7 @@ pod 'AMapSearch' #地图SDK搜索功能
 
 ```
 
-####(2)签到界面的初始化
+#### (2)签到界面的初始化
 设置需要的属性
 
 ```
@@ -195,7 +195,7 @@ pod 'AMapSearch' #地图SDK搜索功能
 初始化界面效果图:
 ![初始化界面.png](http://upload-images.jianshu.io/upload_images/2469805-ff85ad2534f17cbd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###3.签到功能实现和FMDB储存离线签到的记录.
+### 3.签到功能实现和FMDB储存离线签到的记录.
 对于点击签到按钮的响应事件就直接上代码了
 
 ```
