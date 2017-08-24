@@ -1,3 +1,6 @@
+![Language](https://img.shields.io/badge/Language-Objective--C-lightgrey.svg?style=flat-square)
+![Platform](https://img.shields.io/badge/Platform-iOS-yellow.svg?style=flat-square)
+
 # 地图定位签到及离线签到功能实现
 
 公司的项目要实现一个像钉钉一样签到的功能,搜索后发现很少有相关的Demo或者资料,所以在这里抽取出定位签到的功能.
