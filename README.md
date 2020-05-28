@@ -291,6 +291,4 @@ pod 'FMDB'
 
 ![签到功能.gif](http://upload-images.jianshu.io/upload_images/2469805-efa9bdf359ad3b1d.gif?imageMogr2/auto-orient/strip)
 
-附上[Demo](https://github.com/LitBr/SignDemo)
-
 有什么问题可以留言,共同学习~
